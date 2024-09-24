@@ -1,0 +1,12 @@
+C:\Users\penamartin.s\Desktop\Programming 1\Phonenumbers\bin\Debug\Phonenumbers.exe.config
+C:\Users\penamartin.s\Desktop\Programming 1\Phonenumbers\bin\Debug\Phonenumbers.exe
+C:\Users\penamartin.s\Desktop\Programming 1\Phonenumbers\bin\Debug\Phonenumbers.dll
+C:\Users\penamartin.s\Desktop\Programming 1\Phonenumbers\bin\Debug\IronPython.dll
+C:\Users\penamartin.s\Desktop\Programming 1\Phonenumbers\bin\Debug\IronPython.Modules.dll
+C:\Users\penamartin.s\Desktop\Programming 1\Phonenumbers\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\penamartin.s\Desktop\Programming 1\Phonenumbers\bin\Debug\Microsoft.Scripting.dll
+C:\Users\penamartin.s\Desktop\Programming 1\Phonenumbers\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\penamartin.s\Desktop\Programming 1\Phonenumbers\obj\Debug\Phonenumbers.pyprojResolveAssemblyReference.cache
+C:\Users\penamartin.s\Desktop\Programming 1\Phonenumbers\obj\Debug\Phonenumbers.MainForm.resources
+C:\Users\penamartin.s\Desktop\Programming 1\Phonenumbers\obj\Debug\Phonenumbers.pyproj.GenerateResource.Cache
+C:\Users\penamartin.s\Desktop\Programming 1\Phonenumbers\obj\Debug\Phonenumbers.exe
