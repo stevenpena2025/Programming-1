@@ -1,3 +1,6 @@
 C:\Users\penamartin.s\Documents\SharpDevelop Projects\prog88a\prog88a\obj\Debug\prog88a.pyprojResolveAssemblyReference.cache
 C:\Users\penamartin.s\Documents\SharpDevelop Projects\prog88a\prog88a\obj\Debug\prog88a.MainForm.resources
 C:\Users\penamartin.s\Documents\SharpDevelop Projects\prog88a\prog88a\obj\Debug\prog88a.pyproj.GenerateResource.Cache
+C:\Users\penamartin.s\Desktop\Programming-1\Prog88a\prog88a\obj\Debug\prog88a.pyprojResolveAssemblyReference.cache
+C:\Users\penamartin.s\Desktop\Programming-1\Prog88a\prog88a\obj\Debug\prog88a.MainForm.resources
+C:\Users\penamartin.s\Desktop\Programming-1\Prog88a\prog88a\obj\Debug\prog88a.pyproj.GenerateResource.Cache

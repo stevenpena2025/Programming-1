@@ -277,7 +277,7 @@ class MainForm(Form):
 			max = num1
 		else: #Otherwise...
 			Max = num2
-		if Max == num1 #If Max has the same value as num1 (==)
+		if Max = num1 #If Max has the same value as num1 (==)
 			Min = num2
 		else:
 			Min = num1 	
