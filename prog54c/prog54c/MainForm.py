@@ -78,6 +78,7 @@ class MainForm(Form):
         self._button1.TabIndex = 5
         self._button1.Text = "Calculate"
         self._button1.UseVisualStyleBackColor = True
+        self._button1.Click += self.Button1Click
         # 
         # button2
         # 
@@ -181,3 +182,6 @@ class MainForm(Form):
 
     def Button3Click(self, sender, e):
         Application.Exit()
+
+    def Button1Click(self, sender, e):
+        pass
