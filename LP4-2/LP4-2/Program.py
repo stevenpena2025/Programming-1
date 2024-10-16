@@ -6,3 +6,5 @@ hight = int(input("Enter # of hight:"))
 
 if weight < 27 and <= 0.1:
 print("Too heavy and too large")
+
+     

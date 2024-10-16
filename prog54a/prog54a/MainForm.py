@@ -189,12 +189,6 @@ class MainForm(Form):
             gallons = 11
         
         
-        
-        
-        
-        
-        
-        
         else:
             MessageBox.Show("Invalid Car!")
             
