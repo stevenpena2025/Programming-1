@@ -247,6 +247,7 @@ class MainForm(Form):
         price    = int(self._textBox2.Text)
         due = recieved - price
         self._label4.text = str(due)
+        str(num)
         
         # + - * / %     **   pow     //   divide & round down
         # int (Integer): a whole number, pos/neg
@@ -266,3 +267,5 @@ class MainForm(Form):
 
     def Button3Click(self, sender, e):
         Application.Exit()
+       
+     
