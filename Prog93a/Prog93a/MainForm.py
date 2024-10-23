@@ -28,8 +28,9 @@ class MainForm(Form):
         # 
         # label1
         # 
+        self._label1.BackColor = System.Drawing.Color.CadetBlue
         self._label1.Font = System.Drawing.Font("Microsoft Sans Serif", 15.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._label1.Location = System.Drawing.Point(13, 13)
+        self._label1.Location = System.Drawing.Point(12, 13)
         self._label1.Name = "label1"
         self._label1.Size = System.Drawing.Size(159, 23)
         self._label1.TabIndex = 0
@@ -45,6 +46,7 @@ class MainForm(Form):
         # 
         # label2
         # 
+        self._label2.BackColor = System.Drawing.Color.CadetBlue
         self._label2.Font = System.Drawing.Font("Microsoft Sans Serif", 15.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label2.Location = System.Drawing.Point(12, 75)
         self._label2.Name = "label2"
@@ -54,6 +56,7 @@ class MainForm(Form):
         # 
         # label3
         # 
+        self._label3.BackColor = System.Drawing.Color.CadetBlue
         self._label3.Font = System.Drawing.Font("Microsoft Sans Serif", 15.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label3.Location = System.Drawing.Point(178, 75)
         self._label3.Name = "label3"
@@ -63,6 +66,7 @@ class MainForm(Form):
         # 
         # label4
         # 
+        self._label4.BackColor = System.Drawing.Color.CadetBlue
         self._label4.Font = System.Drawing.Font("Microsoft Sans Serif", 15.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label4.Location = System.Drawing.Point(12, 136)
         self._label4.Name = "label4"
@@ -72,6 +76,7 @@ class MainForm(Form):
         # 
         # label5
         # 
+        self._label5.BackColor = System.Drawing.Color.CadetBlue
         self._label5.Font = System.Drawing.Font("Microsoft Sans Serif", 15.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label5.Location = System.Drawing.Point(178, 136)
         self._label5.Name = "label5"
@@ -81,42 +86,48 @@ class MainForm(Form):
         # 
         # label6
         # 
+        self._label6.BackColor = System.Drawing.Color.CadetBlue
         self._label6.Font = System.Drawing.Font("Microsoft Sans Serif", 15.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._label6.Location = System.Drawing.Point(178, 257)
+        self._label6.Location = System.Drawing.Point(13, 196)
         self._label6.Name = "label6"
         self._label6.Size = System.Drawing.Size(159, 23)
         self._label6.TabIndex = 9
-        self._label6.Text = "E"
+        self._label6.Text = "City Tax:"
         # 
         # label7
         # 
+        self._label7.BackColor = System.Drawing.Color.CadetBlue
         self._label7.Font = System.Drawing.Font("Microsoft Sans Serif", 15.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._label7.Location = System.Drawing.Point(12, 257)
+        self._label7.Location = System.Drawing.Point(178, 196)
         self._label7.Name = "label7"
         self._label7.Size = System.Drawing.Size(159, 23)
         self._label7.TabIndex = 8
-        self._label7.Text = "Total:"
+        self._label7.Text = "E"
         # 
         # label8
         # 
+        self._label8.BackColor = System.Drawing.Color.CadetBlue
         self._label8.Font = System.Drawing.Font("Microsoft Sans Serif", 15.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._label8.Location = System.Drawing.Point(178, 196)
+        self._label8.Location = System.Drawing.Point(12, 257)
         self._label8.Name = "label8"
         self._label8.Size = System.Drawing.Size(159, 23)
         self._label8.TabIndex = 7
-        self._label8.Text = "E"
+        self._label8.Text = "Total:"
         # 
         # label9
         # 
+        self._label9.BackColor = System.Drawing.Color.CadetBlue
         self._label9.Font = System.Drawing.Font("Microsoft Sans Serif", 15.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._label9.Location = System.Drawing.Point(12, 196)
+        self._label9.Location = System.Drawing.Point(178, 257)
         self._label9.Name = "label9"
         self._label9.Size = System.Drawing.Size(159, 23)
         self._label9.TabIndex = 6
-        self._label9.Text = "City Tax:"
+        self._label9.Text = "E"
+        self._label9.Click += self.Label9Click
         # 
         # label10
         # 
+        self._label10.BackColor = System.Drawing.Color.CadetBlue
         self._label10.Font = System.Drawing.Font("Microsoft Sans Serif", 15.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label10.Location = System.Drawing.Point(13, 322)
         self._label10.Name = "label10"
@@ -126,6 +137,7 @@ class MainForm(Form):
         # 
         # label11
         # 
+        self._label11.BackColor = System.Drawing.Color.CadetBlue
         self._label11.Font = System.Drawing.Font("Microsoft Sans Serif", 15.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label11.Location = System.Drawing.Point(178, 322)
         self._label11.Name = "label11"
@@ -153,6 +165,7 @@ class MainForm(Form):
         self._button2.TabIndex = 13
         self._button2.Text = "Clear"
         self._button2.UseVisualStyleBackColor = True
+        self._button2.Click += self.Button2Click
         # 
         # button3
         # 
@@ -163,6 +176,7 @@ class MainForm(Form):
         self._button3.TabIndex = 14
         self._button3.Text = "Exit"
         self._button3.UseVisualStyleBackColor = True
+        self._button3.Click += self.Button3Click
         # 
         # MainForm
         # 
@@ -192,3 +206,17 @@ class MainForm(Form):
     def Button1Click(self, sender, e):
         kilowatts = 0.0
         
+
+    def Button2Click(self, sender, e):
+        self._textBox1.Text = ""
+        self._label3.Text = ""
+        self._label5.Text = ""
+        self._label7.Text = ""
+        self._label9.Text = ""
+        self._label11.Text = ""
+
+    def Label9Click(self, sender, e):
+        pass #do not use 
+
+    def Button3Click(self, sender, e):
+        Exit._Application()
