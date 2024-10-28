@@ -1,0 +1,5 @@
+C:\Users\penamartin.s\Desktop\Programming-1\Prog88a\Prog88a\bin\Debug\Prog88a.exe
+C:\Users\penamartin.s\Desktop\Programming-1\Prog88a\Prog88a\bin\Debug\Prog88a.pdb
+C:\Users\penamartin.s\Desktop\Programming-1\Prog88a\Prog88a\obj\Debug\Prog88a.csprojResolveAssemblyReference.cache
+C:\Users\penamartin.s\Desktop\Programming-1\Prog88a\Prog88a\obj\Debug\Prog88a.exe
+C:\Users\penamartin.s\Desktop\Programming-1\Prog88a\Prog88a\obj\Debug\Prog88a.pdb
