@@ -19,8 +19,8 @@ class MainForm(Form):
         self._textBox1 = System.Windows.Forms.TextBox()
         self._textBox2 = System.Windows.Forms.TextBox()
         self._label4 = System.Windows.Forms.Label()
-        self._Quarters = System.Windows.Forms.Label()
-        self._E = System.Windows.Forms.Label()
+        self._label12 = System.Windows.Forms.Label()
+        self._label6 = System.Windows.Forms.Label()
         self._label7 = System.Windows.Forms.Label()
         self._label8 = System.Windows.Forms.Label()
         self._label9 = System.Windows.Forms.Label()
@@ -38,8 +38,8 @@ class MainForm(Form):
         self._panel1.Controls.Add(self._label9)
         self._panel1.Controls.Add(self._label8)
         self._panel1.Controls.Add(self._label7)
-        self._panel1.Controls.Add(self._E)
-        self._panel1.Controls.Add(self._Quarters)
+        self._panel1.Controls.Add(self._label6)
+        self._panel1.Controls.Add(self._label12)
         self._panel1.Controls.Add(self._label4)
         self._panel1.Controls.Add(self._textBox2)
         self._panel1.Controls.Add(self._textBox1)
@@ -138,23 +138,23 @@ class MainForm(Form):
         self._label4.TabIndex = 9
         self._label4.Text = "E"
         # 
-        # Quarters
+        # label12
         # 
-        self._Quarters.Font = System.Drawing.Font("Microsoft Sans Serif", 15.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._Quarters.Location = System.Drawing.Point(574, 23)
-        self._Quarters.Name = "Quarters"
-        self._Quarters.Size = System.Drawing.Size(100, 23)
-        self._Quarters.TabIndex = 10
-        self._Quarters.Text = "Quartes:"
+        self._label12.Font = System.Drawing.Font("Microsoft Sans Serif", 15.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+        self._label12.Location = System.Drawing.Point(693, 175)
+        self._label12.Name = "label12"
+        self._label12.Size = System.Drawing.Size(100, 23)
+        self._label12.TabIndex = 10
+        self._label12.Text = "E"
         # 
-        # E
+        # label6
         # 
-        self._E.Font = System.Drawing.Font("Microsoft Sans Serif", 15.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._E.Location = System.Drawing.Point(690, 23)
-        self._E.Name = "E"
-        self._E.Size = System.Drawing.Size(100, 23)
-        self._E.TabIndex = 11
-        self._E.Text = "E"
+        self._label6.Font = System.Drawing.Font("Microsoft Sans Serif", 15.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+        self._label6.Location = System.Drawing.Point(690, 23)
+        self._label6.Name = "label6"
+        self._label6.Size = System.Drawing.Size(100, 23)
+        self._label6.TabIndex = 11
+        self._label6.Text = "E"
         # 
         # label7
         # 
@@ -204,11 +204,11 @@ class MainForm(Form):
         # label5
         # 
         self._label5.Font = System.Drawing.Font("Microsoft Sans Serif", 15.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._label5.Location = System.Drawing.Point(690, 175)
+        self._label5.Location = System.Drawing.Point(574, 23)
         self._label5.Name = "label5"
         self._label5.Size = System.Drawing.Size(100, 23)
         self._label5.TabIndex = 17
-        self._label5.Text = "E"
+        self._label5.Text = "Quarters:"
         # 
         # MainForm
         # 
@@ -225,12 +225,25 @@ class MainForm(Form):
         pass
 
     def Button1Click(self, sender, e):
-        Price = float (self._textBox1.Text)
-        Received = float (self._textBox2.Text)
-        Total = Received - Price
+        price = float (self._textBox1.Text)
+        received = float (self._textBox2.Text)
+        total = Received - Price
         self._label4.Text = str (due)
-        
+        #
         dollarvalue = int (total)
-        Decimal change = total - value
+        decimal change = total - value
         quartervalue = float (decimal change) //.25
+        quarterliteralvalue = float (quarter value) *25
+        #
+        rcaq = float (decimal change) - float (quarterliteralvalue)
+        self._label6.Text = str (quarter value)
+        dimevalue = float(rcaq) //.10
+        self._label8.Text = str = dimevalue
+        dimeliteralfloat = float =(dimevalue)
+        rcaq = float (rcaq) - dimeliteralvalue
+        
+        
+        
+        
+        
         
