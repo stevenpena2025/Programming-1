@@ -32,6 +32,7 @@ class MainForm(Form):
         # 
         # panel1
         # 
+        self._panel1.BackColor = System.Drawing.Color.Peru
         self._panel1.Controls.Add(self._label5)
         self._panel1.Controls.Add(self._label11)
         self._panel1.Controls.Add(self._label10)
@@ -56,6 +57,7 @@ class MainForm(Form):
         # 
         # label1
         # 
+        self._label1.BackColor = System.Drawing.Color.FromArgb(255, 192, 128)
         self._label1.Font = System.Drawing.Font("Microsoft Sans Serif", 15.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label1.Location = System.Drawing.Point(3, 13)
         self._label1.Name = "label1"
@@ -97,6 +99,7 @@ class MainForm(Form):
         # 
         # label2
         # 
+        self._label2.BackColor = System.Drawing.Color.FromArgb(255, 192, 128)
         self._label2.Font = System.Drawing.Font("Microsoft Sans Serif", 15.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label2.Location = System.Drawing.Point(3, 62)
         self._label2.Name = "label2"
@@ -106,6 +109,7 @@ class MainForm(Form):
         # 
         # label3
         # 
+        self._label3.BackColor = System.Drawing.Color.FromArgb(255, 192, 128)
         self._label3.Font = System.Drawing.Font("Microsoft Sans Serif", 15.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label3.Location = System.Drawing.Point(3, 114)
         self._label3.Name = "label3"
@@ -131,6 +135,7 @@ class MainForm(Form):
         # 
         # label4
         # 
+        self._label4.BackColor = System.Drawing.Color.White
         self._label4.Font = System.Drawing.Font("Microsoft Sans Serif", 15.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label4.Location = System.Drawing.Point(121, 114)
         self._label4.Name = "label4"
@@ -158,6 +163,7 @@ class MainForm(Form):
         # 
         # label7
         # 
+        self._label7.BackColor = System.Drawing.Color.FromArgb(255, 192, 128)
         self._label7.Font = System.Drawing.Font("Microsoft Sans Serif", 15.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label7.Location = System.Drawing.Point(574, 72)
         self._label7.Name = "label7"
@@ -176,6 +182,7 @@ class MainForm(Form):
         # 
         # label9
         # 
+        self._label9.BackColor = System.Drawing.Color.FromArgb(255, 192, 128)
         self._label9.Font = System.Drawing.Font("Microsoft Sans Serif", 15.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label9.Location = System.Drawing.Point(574, 124)
         self._label9.Name = "label9"
@@ -194,15 +201,17 @@ class MainForm(Form):
         # 
         # label11
         # 
+        self._label11.BackColor = System.Drawing.Color.FromArgb(255, 192, 128)
         self._label11.Font = System.Drawing.Font("Microsoft Sans Serif", 15.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label11.Location = System.Drawing.Point(574, 175)
         self._label11.Name = "label11"
         self._label11.Size = System.Drawing.Size(100, 23)
         self._label11.TabIndex = 16
-        self._label11.Text = "Pennies:"
+        self._label11.Text = "Penny:"
         # 
         # label5
         # 
+        self._label5.BackColor = System.Drawing.Color.FromArgb(255, 192, 128)
         self._label5.Font = System.Drawing.Font("Microsoft Sans Serif", 15.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label5.Location = System.Drawing.Point(574, 23)
         self._label5.Name = "label5"
@@ -229,18 +238,25 @@ class MainForm(Form):
         received = float (self._textBox2.Text)
         total = Received - Price
         self._label4.Text = str (due)
-        #
+        
         dollarvalue = int (total)
-        decimal change = total - value
-        quartervalue = float (decimal change) //.25
-        quarterliteralvalue = float (quarter value) *25
-        #
-        rcaq = float (decimal change) - float (quarterliteralvalue)
-        self._label6.Text = str (quarter value)
+        decimalchange = total - value
+        quartervalue = float (decimalchange) //.25
+        quarterliteralvalue = float (quartervalue) *25
+        
+        rcaq = float (decimalchange) - float (quarterliteralvalue)
+        self._label6.Text = str (quartervalue)
         dimevalue = float(rcaq) //.10
         self._label8.Text = str = dimevalue
         dimeliteralfloat = float =(dimevalue)
         rcaq = float (rcaq) - dimeliteralvalue
+        
+        nickleliteralvalue = float (rcaq) //.05
+        self._label10.Text = str (nicklevalue)*5
+        rcaq = float (rcaq) nickleliteralvalue 
+        
+        penny value = float (racaq) // .01 
+        self._label12.Text = str (pennyvalue)
         
         
         

@@ -1,0 +1,3 @@
+C:\Users\penamartin.s\Desktop\Programming-1\prog58t\prog58t\obj\Debug\prog58t.pyprojResolveAssemblyReference.cache
+C:\Users\penamartin.s\Desktop\Programming-1\prog58t\prog58t\obj\Debug\prog58t.MainForm.resources
+C:\Users\penamartin.s\Desktop\Programming-1\prog58t\prog58t\obj\Debug\prog58t.pyproj.GenerateResource.Cache
