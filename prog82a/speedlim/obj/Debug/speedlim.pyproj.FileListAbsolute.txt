@@ -1,0 +1,12 @@
+C:\Users\penamartin.s\Desktop\Programming-1\speedlim\speedlim\obj\Debug\speedlim.pyprojResolveAssemblyReference.cache
+C:\Users\penamartin.s\Desktop\Programming-1\speedlim\speedlim\obj\Debug\speedlim.MainForm.resources
+C:\Users\penamartin.s\Desktop\Programming-1\speedlim\speedlim\obj\Debug\speedlim.pyproj.GenerateResource.Cache
+C:\Users\penamartin.s\Desktop\Programming-1\speedlim\speedlim\bin\Debug\speedlim.exe.config
+C:\Users\penamartin.s\Desktop\Programming-1\speedlim\speedlim\bin\Debug\speedlim.exe
+C:\Users\penamartin.s\Desktop\Programming-1\speedlim\speedlim\bin\Debug\speedlim.dll
+C:\Users\penamartin.s\Desktop\Programming-1\speedlim\speedlim\bin\Debug\IronPython.dll
+C:\Users\penamartin.s\Desktop\Programming-1\speedlim\speedlim\bin\Debug\IronPython.Modules.dll
+C:\Users\penamartin.s\Desktop\Programming-1\speedlim\speedlim\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\penamartin.s\Desktop\Programming-1\speedlim\speedlim\bin\Debug\Microsoft.Scripting.dll
+C:\Users\penamartin.s\Desktop\Programming-1\speedlim\speedlim\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\penamartin.s\Desktop\Programming-1\speedlim\speedlim\obj\Debug\speedlim.exe

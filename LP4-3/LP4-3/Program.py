@@ -19,6 +19,10 @@ elif eggs <11:
 
 elif eggs <12:
     price = dozen - remainder
+    pass
+    
+elif eggs <12:
+    price = dozen - 12 
 
 
 
