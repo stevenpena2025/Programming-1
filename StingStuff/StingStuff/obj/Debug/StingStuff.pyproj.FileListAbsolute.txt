@@ -1,0 +1,10 @@
+C:\Users\penamartin.s\Desktop\Programming-1\StingStuff\StingStuff\bin\Debug\StingStuff.exe.config
+C:\Users\penamartin.s\Desktop\Programming-1\StingStuff\StingStuff\bin\Debug\StingStuff.exe
+C:\Users\penamartin.s\Desktop\Programming-1\StingStuff\StingStuff\bin\Debug\StingStuff.dll
+C:\Users\penamartin.s\Desktop\Programming-1\StingStuff\StingStuff\bin\Debug\IronPython.dll
+C:\Users\penamartin.s\Desktop\Programming-1\StingStuff\StingStuff\bin\Debug\IronPython.Modules.dll
+C:\Users\penamartin.s\Desktop\Programming-1\StingStuff\StingStuff\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\penamartin.s\Desktop\Programming-1\StingStuff\StingStuff\bin\Debug\Microsoft.Scripting.dll
+C:\Users\penamartin.s\Desktop\Programming-1\StingStuff\StingStuff\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\penamartin.s\Desktop\Programming-1\StingStuff\StingStuff\obj\Debug\StingStuff.pyprojResolveAssemblyReference.cache
+C:\Users\penamartin.s\Desktop\Programming-1\StingStuff\StingStuff\obj\Debug\StingStuff.exe
