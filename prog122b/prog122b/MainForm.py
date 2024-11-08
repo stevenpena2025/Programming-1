@@ -99,36 +99,46 @@ class MainForm(Form):
         # 
         # button1
         # 
+        self._button1.BackColor = System.Drawing.Color.FromArgb(0, 64, 0)
         self._button1.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._button1.Location = System.Drawing.Point(16, 405)
+        self._button1.ForeColor = System.Drawing.Color.White
+        self._button1.Location = System.Drawing.Point(12, 428)
         self._button1.Name = "button1"
         self._button1.Size = System.Drawing.Size(117, 42)
         self._button1.TabIndex = 0
         self._button1.Text = "Calculate"
-        self._button1.UseVisualStyleBackColor = True
+        self._button1.UseVisualStyleBackColor = False
+        self._button1.Click += self.Button1Click
         # 
         # button2
         # 
+        self._button2.BackColor = System.Drawing.Color.FromArgb(0, 64, 0)
         self._button2.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._button2.Location = System.Drawing.Point(184, 405)
+        self._button2.ForeColor = System.Drawing.Color.White
+        self._button2.Location = System.Drawing.Point(184, 428)
         self._button2.Name = "button2"
         self._button2.Size = System.Drawing.Size(117, 42)
         self._button2.TabIndex = 1
         self._button2.Text = "Clear"
-        self._button2.UseVisualStyleBackColor = True
+        self._button2.UseVisualStyleBackColor = False
+        self._button2.Click += self.Button2Click
         # 
         # button3
         # 
+        self._button3.BackColor = System.Drawing.Color.FromArgb(0, 64, 0)
         self._button3.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._button3.Location = System.Drawing.Point(361, 405)
+        self._button3.ForeColor = System.Drawing.Color.White
+        self._button3.Location = System.Drawing.Point(361, 428)
         self._button3.Name = "button3"
         self._button3.Size = System.Drawing.Size(117, 42)
         self._button3.TabIndex = 2
         self._button3.Text = "Exit"
-        self._button3.UseVisualStyleBackColor = True
+        self._button3.UseVisualStyleBackColor = False
+        self._button3.Click += self.Button3Click
         # 
         # label1
         # 
+        self._label1.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label1.Font = System.Drawing.Font("Microsoft Sans Serif", 15.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label1.Location = System.Drawing.Point(12, 15)
         self._label1.Name = "label1"
@@ -138,6 +148,7 @@ class MainForm(Form):
         # 
         # label2
         # 
+        self._label2.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label2.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label2.Location = System.Drawing.Point(12, 43)
         self._label2.Name = "label2"
@@ -147,6 +158,7 @@ class MainForm(Form):
         # 
         # label3
         # 
+        self._label3.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label3.Font = System.Drawing.Font("Microsoft Sans Serif", 15.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label3.Location = System.Drawing.Point(184, 9)
         self._label3.Name = "label3"
@@ -157,6 +169,7 @@ class MainForm(Form):
         # 
         # label4
         # 
+        self._label4.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label4.Font = System.Drawing.Font("Microsoft Sans Serif", 15.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label4.Location = System.Drawing.Point(418, 15)
         self._label4.Name = "label4"
@@ -166,6 +179,7 @@ class MainForm(Form):
         # 
         # label5
         # 
+        self._label5.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label5.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label5.Location = System.Drawing.Point(12, 66)
         self._label5.Name = "label5"
@@ -175,6 +189,7 @@ class MainForm(Form):
         # 
         # label6
         # 
+        self._label6.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label6.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label6.Location = System.Drawing.Point(12, 89)
         self._label6.Name = "label6"
@@ -184,24 +199,27 @@ class MainForm(Form):
         # 
         # label7
         # 
+        self._label7.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label7.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._label7.Location = System.Drawing.Point(11, 112)
+        self._label7.Location = System.Drawing.Point(12, 112)
         self._label7.Name = "label7"
-        self._label7.Size = System.Drawing.Size(56, 23)
+        self._label7.Size = System.Drawing.Size(55, 23)
         self._label7.TabIndex = 9
         self._label7.Text = "4"
         # 
         # label8
         # 
+        self._label8.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label8.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._label8.Location = System.Drawing.Point(11, 135)
+        self._label8.Location = System.Drawing.Point(12, 135)
         self._label8.Name = "label8"
-        self._label8.Size = System.Drawing.Size(56, 23)
+        self._label8.Size = System.Drawing.Size(55, 23)
         self._label8.TabIndex = 10
         self._label8.Text = "5"
         # 
         # label9
         # 
+        self._label9.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label9.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label9.Location = System.Drawing.Point(12, 158)
         self._label9.Name = "label9"
@@ -212,15 +230,17 @@ class MainForm(Form):
         # 
         # label10
         # 
+        self._label10.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label10.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._label10.Location = System.Drawing.Point(11, 181)
+        self._label10.Location = System.Drawing.Point(12, 181)
         self._label10.Name = "label10"
-        self._label10.Size = System.Drawing.Size(56, 23)
+        self._label10.Size = System.Drawing.Size(55, 23)
         self._label10.TabIndex = 12
         self._label10.Text = "7"
         # 
         # label11
         # 
+        self._label11.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label11.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label11.Location = System.Drawing.Point(12, 204)
         self._label11.Name = "label11"
@@ -231,6 +251,7 @@ class MainForm(Form):
         # 
         # label12
         # 
+        self._label12.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label12.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label12.Location = System.Drawing.Point(12, 227)
         self._label12.Name = "label12"
@@ -240,24 +261,27 @@ class MainForm(Form):
         # 
         # label13
         # 
+        self._label13.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label13.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._label13.Location = System.Drawing.Point(11, 250)
+        self._label13.Location = System.Drawing.Point(12, 250)
         self._label13.Name = "label13"
-        self._label13.Size = System.Drawing.Size(56, 23)
+        self._label13.Size = System.Drawing.Size(55, 23)
         self._label13.TabIndex = 15
         self._label13.Text = "10"
         # 
         # label14
         # 
+        self._label14.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label14.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._label14.Location = System.Drawing.Point(11, 273)
+        self._label14.Location = System.Drawing.Point(12, 273)
         self._label14.Name = "label14"
-        self._label14.Size = System.Drawing.Size(56, 23)
+        self._label14.Size = System.Drawing.Size(55, 23)
         self._label14.TabIndex = 16
         self._label14.Text = "11"
         # 
         # label15
         # 
+        self._label15.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label15.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label15.Location = System.Drawing.Point(12, 296)
         self._label15.Name = "label15"
@@ -267,33 +291,37 @@ class MainForm(Form):
         # 
         # label16
         # 
+        self._label16.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label16.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._label16.Location = System.Drawing.Point(11, 319)
+        self._label16.Location = System.Drawing.Point(12, 319)
         self._label16.Name = "label16"
-        self._label16.Size = System.Drawing.Size(56, 23)
+        self._label16.Size = System.Drawing.Size(55, 23)
         self._label16.TabIndex = 18
         self._label16.Text = "13"
         # 
         # label17
         # 
+        self._label17.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label17.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._label17.Location = System.Drawing.Point(11, 342)
+        self._label17.Location = System.Drawing.Point(12, 342)
         self._label17.Name = "label17"
-        self._label17.Size = System.Drawing.Size(56, 23)
+        self._label17.Size = System.Drawing.Size(55, 23)
         self._label17.TabIndex = 19
         self._label17.Text = "14"
         # 
         # label18
         # 
+        self._label18.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label18.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._label18.Location = System.Drawing.Point(11, 365)
+        self._label18.Location = System.Drawing.Point(12, 365)
         self._label18.Name = "label18"
-        self._label18.Size = System.Drawing.Size(56, 23)
+        self._label18.Size = System.Drawing.Size(55, 23)
         self._label18.TabIndex = 20
         self._label18.Text = "15"
         # 
         # label19
         # 
+        self._label19.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label19.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label19.Location = System.Drawing.Point(64, 365)
         self._label19.Name = "label19"
@@ -303,6 +331,7 @@ class MainForm(Form):
         # 
         # label20
         # 
+        self._label20.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label20.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label20.Location = System.Drawing.Point(64, 342)
         self._label20.Name = "label20"
@@ -312,6 +341,7 @@ class MainForm(Form):
         # 
         # label21
         # 
+        self._label21.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label21.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label21.Location = System.Drawing.Point(64, 319)
         self._label21.Name = "label21"
@@ -321,15 +351,17 @@ class MainForm(Form):
         # 
         # label22
         # 
+        self._label22.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label22.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label22.Location = System.Drawing.Point(65, 296)
         self._label22.Name = "label22"
-        self._label22.Size = System.Drawing.Size(56, 23)
+        self._label22.Size = System.Drawing.Size(55, 23)
         self._label22.TabIndex = 32
         self._label22.Text = "27"
         # 
         # label23
         # 
+        self._label23.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label23.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label23.Location = System.Drawing.Point(64, 273)
         self._label23.Name = "label23"
@@ -339,6 +371,7 @@ class MainForm(Form):
         # 
         # label24
         # 
+        self._label24.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label24.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label24.Location = System.Drawing.Point(64, 250)
         self._label24.Name = "label24"
@@ -348,25 +381,28 @@ class MainForm(Form):
         # 
         # label25
         # 
+        self._label25.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label25.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label25.Location = System.Drawing.Point(65, 227)
         self._label25.Name = "label25"
-        self._label25.Size = System.Drawing.Size(56, 23)
+        self._label25.Size = System.Drawing.Size(55, 23)
         self._label25.TabIndex = 29
         self._label25.Text = "24"
         # 
         # label26
         # 
+        self._label26.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label26.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label26.Location = System.Drawing.Point(65, 204)
         self._label26.Name = "label26"
         self._label26.RightToLeft = System.Windows.Forms.RightToLeft.No
-        self._label26.Size = System.Drawing.Size(56, 23)
+        self._label26.Size = System.Drawing.Size(55, 23)
         self._label26.TabIndex = 28
         self._label26.Text = "23"
         # 
         # label27
         # 
+        self._label27.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label27.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label27.Location = System.Drawing.Point(64, 181)
         self._label27.Name = "label27"
@@ -376,16 +412,18 @@ class MainForm(Form):
         # 
         # label28
         # 
+        self._label28.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label28.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label28.Location = System.Drawing.Point(65, 158)
         self._label28.Name = "label28"
-        self._label28.Size = System.Drawing.Size(56, 23)
+        self._label28.Size = System.Drawing.Size(55, 23)
         self._label28.TabIndex = 26
         self._label28.Text = "21"
         self._label28.Click += self.Label28Click
         # 
         # label29
         # 
+        self._label29.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label29.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label29.Location = System.Drawing.Point(64, 135)
         self._label29.Name = "label29"
@@ -395,6 +433,7 @@ class MainForm(Form):
         # 
         # label30
         # 
+        self._label30.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label30.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label30.Location = System.Drawing.Point(64, 112)
         self._label30.Name = "label30"
@@ -404,35 +443,39 @@ class MainForm(Form):
         # 
         # label31
         # 
+        self._label31.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label31.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label31.Location = System.Drawing.Point(65, 89)
         self._label31.Name = "label31"
-        self._label31.Size = System.Drawing.Size(56, 23)
+        self._label31.Size = System.Drawing.Size(55, 23)
         self._label31.TabIndex = 23
         self._label31.Text = "18"
         # 
         # label32
         # 
+        self._label32.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label32.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label32.Location = System.Drawing.Point(65, 66)
         self._label32.Name = "label32"
-        self._label32.Size = System.Drawing.Size(56, 23)
+        self._label32.Size = System.Drawing.Size(55, 23)
         self._label32.TabIndex = 22
         self._label32.Text = "17"
         # 
         # label33
         # 
+        self._label33.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label33.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label33.Location = System.Drawing.Point(65, 43)
         self._label33.Name = "label33"
-        self._label33.Size = System.Drawing.Size(56, 23)
+        self._label33.Size = System.Drawing.Size(55, 23)
         self._label33.TabIndex = 21
         self._label33.Text = "16"
         # 
         # label39
         # 
+        self._label39.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label39.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._label39.Location = System.Drawing.Point(135, 250)
+        self._label39.Location = System.Drawing.Point(136, 250)
         self._label39.Name = "label39"
         self._label39.Size = System.Drawing.Size(56, 23)
         self._label39.TabIndex = 45
@@ -440,6 +483,7 @@ class MainForm(Form):
         # 
         # label40
         # 
+        self._label40.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label40.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label40.Location = System.Drawing.Point(136, 227)
         self._label40.Name = "label40"
@@ -449,6 +493,7 @@ class MainForm(Form):
         # 
         # label41
         # 
+        self._label41.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label41.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label41.Location = System.Drawing.Point(136, 204)
         self._label41.Name = "label41"
@@ -459,8 +504,9 @@ class MainForm(Form):
         # 
         # label42
         # 
+        self._label42.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label42.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._label42.Location = System.Drawing.Point(135, 181)
+        self._label42.Location = System.Drawing.Point(136, 181)
         self._label42.Name = "label42"
         self._label42.Size = System.Drawing.Size(56, 23)
         self._label42.TabIndex = 42
@@ -468,6 +514,7 @@ class MainForm(Form):
         # 
         # label43
         # 
+        self._label43.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label43.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label43.Location = System.Drawing.Point(136, 158)
         self._label43.Name = "label43"
@@ -477,8 +524,9 @@ class MainForm(Form):
         # 
         # label44
         # 
+        self._label44.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label44.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._label44.Location = System.Drawing.Point(135, 135)
+        self._label44.Location = System.Drawing.Point(136, 135)
         self._label44.Name = "label44"
         self._label44.Size = System.Drawing.Size(56, 23)
         self._label44.TabIndex = 40
@@ -486,8 +534,9 @@ class MainForm(Form):
         # 
         # label45
         # 
+        self._label45.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label45.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._label45.Location = System.Drawing.Point(135, 112)
+        self._label45.Location = System.Drawing.Point(136, 112)
         self._label45.Name = "label45"
         self._label45.Size = System.Drawing.Size(56, 23)
         self._label45.TabIndex = 39
@@ -495,6 +544,7 @@ class MainForm(Form):
         # 
         # label46
         # 
+        self._label46.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label46.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label46.Location = System.Drawing.Point(136, 89)
         self._label46.Name = "label46"
@@ -504,6 +554,7 @@ class MainForm(Form):
         # 
         # label47
         # 
+        self._label47.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label47.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label47.Location = System.Drawing.Point(136, 66)
         self._label47.Name = "label47"
@@ -513,6 +564,7 @@ class MainForm(Form):
         # 
         # label48
         # 
+        self._label48.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label48.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label48.Location = System.Drawing.Point(136, 43)
         self._label48.Name = "label48"
@@ -522,8 +574,9 @@ class MainForm(Form):
         # 
         # label34
         # 
+        self._label34.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label34.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._label34.Location = System.Drawing.Point(432, 250)
+        self._label34.Location = System.Drawing.Point(433, 250)
         self._label34.Name = "label34"
         self._label34.Size = System.Drawing.Size(56, 23)
         self._label34.TabIndex = 85
@@ -531,6 +584,7 @@ class MainForm(Form):
         # 
         # label35
         # 
+        self._label35.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label35.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label35.Location = System.Drawing.Point(433, 227)
         self._label35.Name = "label35"
@@ -540,6 +594,7 @@ class MainForm(Form):
         # 
         # label36
         # 
+        self._label36.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label36.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label36.Location = System.Drawing.Point(433, 204)
         self._label36.Name = "label36"
@@ -550,8 +605,9 @@ class MainForm(Form):
         # 
         # label37
         # 
+        self._label37.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label37.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._label37.Location = System.Drawing.Point(432, 181)
+        self._label37.Location = System.Drawing.Point(433, 181)
         self._label37.Name = "label37"
         self._label37.Size = System.Drawing.Size(56, 23)
         self._label37.TabIndex = 82
@@ -559,6 +615,7 @@ class MainForm(Form):
         # 
         # label38
         # 
+        self._label38.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label38.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label38.Location = System.Drawing.Point(433, 158)
         self._label38.Name = "label38"
@@ -568,8 +625,9 @@ class MainForm(Form):
         # 
         # label49
         # 
+        self._label49.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label49.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._label49.Location = System.Drawing.Point(432, 135)
+        self._label49.Location = System.Drawing.Point(433, 135)
         self._label49.Name = "label49"
         self._label49.Size = System.Drawing.Size(56, 23)
         self._label49.TabIndex = 80
@@ -577,8 +635,9 @@ class MainForm(Form):
         # 
         # label50
         # 
+        self._label50.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label50.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._label50.Location = System.Drawing.Point(432, 112)
+        self._label50.Location = System.Drawing.Point(433, 112)
         self._label50.Name = "label50"
         self._label50.Size = System.Drawing.Size(56, 23)
         self._label50.TabIndex = 79
@@ -586,6 +645,7 @@ class MainForm(Form):
         # 
         # label51
         # 
+        self._label51.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label51.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label51.Location = System.Drawing.Point(433, 89)
         self._label51.Name = "label51"
@@ -595,6 +655,7 @@ class MainForm(Form):
         # 
         # label52
         # 
+        self._label52.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label52.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label52.Location = System.Drawing.Point(433, 66)
         self._label52.Name = "label52"
@@ -604,6 +665,7 @@ class MainForm(Form):
         # 
         # label53
         # 
+        self._label53.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label53.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label53.Location = System.Drawing.Point(433, 43)
         self._label53.Name = "label53"
@@ -613,6 +675,7 @@ class MainForm(Form):
         # 
         # label54
         # 
+        self._label54.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label54.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label54.Location = System.Drawing.Point(361, 365)
         self._label54.Name = "label54"
@@ -622,6 +685,7 @@ class MainForm(Form):
         # 
         # label55
         # 
+        self._label55.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label55.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label55.Location = System.Drawing.Point(361, 342)
         self._label55.Name = "label55"
@@ -631,6 +695,7 @@ class MainForm(Form):
         # 
         # label56
         # 
+        self._label56.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label56.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label56.Location = System.Drawing.Point(361, 319)
         self._label56.Name = "label56"
@@ -640,8 +705,9 @@ class MainForm(Form):
         # 
         # label57
         # 
+        self._label57.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label57.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._label57.Location = System.Drawing.Point(362, 296)
+        self._label57.Location = System.Drawing.Point(361, 296)
         self._label57.Name = "label57"
         self._label57.Size = System.Drawing.Size(56, 23)
         self._label57.TabIndex = 72
@@ -649,6 +715,7 @@ class MainForm(Form):
         # 
         # label58
         # 
+        self._label58.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label58.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label58.Location = System.Drawing.Point(361, 273)
         self._label58.Name = "label58"
@@ -658,6 +725,7 @@ class MainForm(Form):
         # 
         # label59
         # 
+        self._label59.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label59.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label59.Location = System.Drawing.Point(361, 250)
         self._label59.Name = "label59"
@@ -667,8 +735,9 @@ class MainForm(Form):
         # 
         # label60
         # 
+        self._label60.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label60.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._label60.Location = System.Drawing.Point(362, 227)
+        self._label60.Location = System.Drawing.Point(361, 227)
         self._label60.Name = "label60"
         self._label60.Size = System.Drawing.Size(56, 23)
         self._label60.TabIndex = 69
@@ -676,8 +745,9 @@ class MainForm(Form):
         # 
         # label61
         # 
+        self._label61.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label61.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._label61.Location = System.Drawing.Point(362, 204)
+        self._label61.Location = System.Drawing.Point(361, 204)
         self._label61.Name = "label61"
         self._label61.RightToLeft = System.Windows.Forms.RightToLeft.No
         self._label61.Size = System.Drawing.Size(56, 23)
@@ -686,6 +756,7 @@ class MainForm(Form):
         # 
         # label62
         # 
+        self._label62.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label62.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label62.Location = System.Drawing.Point(361, 181)
         self._label62.Name = "label62"
@@ -695,8 +766,9 @@ class MainForm(Form):
         # 
         # label63
         # 
+        self._label63.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label63.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._label63.Location = System.Drawing.Point(362, 158)
+        self._label63.Location = System.Drawing.Point(361, 158)
         self._label63.Name = "label63"
         self._label63.Size = System.Drawing.Size(56, 23)
         self._label63.TabIndex = 66
@@ -704,6 +776,7 @@ class MainForm(Form):
         # 
         # label64
         # 
+        self._label64.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label64.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label64.Location = System.Drawing.Point(361, 135)
         self._label64.Name = "label64"
@@ -713,6 +786,7 @@ class MainForm(Form):
         # 
         # label65
         # 
+        self._label65.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label65.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label65.Location = System.Drawing.Point(361, 112)
         self._label65.Name = "label65"
@@ -722,8 +796,9 @@ class MainForm(Form):
         # 
         # label66
         # 
+        self._label66.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label66.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._label66.Location = System.Drawing.Point(362, 89)
+        self._label66.Location = System.Drawing.Point(361, 89)
         self._label66.Name = "label66"
         self._label66.Size = System.Drawing.Size(56, 23)
         self._label66.TabIndex = 63
@@ -731,8 +806,9 @@ class MainForm(Form):
         # 
         # label67
         # 
+        self._label67.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label67.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._label67.Location = System.Drawing.Point(362, 66)
+        self._label67.Location = System.Drawing.Point(361, 66)
         self._label67.Name = "label67"
         self._label67.Size = System.Drawing.Size(56, 23)
         self._label67.TabIndex = 62
@@ -740,8 +816,9 @@ class MainForm(Form):
         # 
         # label68
         # 
+        self._label68.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label68.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._label68.Location = System.Drawing.Point(362, 43)
+        self._label68.Location = System.Drawing.Point(361, 43)
         self._label68.Name = "label68"
         self._label68.Size = System.Drawing.Size(56, 23)
         self._label68.TabIndex = 61
@@ -749,8 +826,9 @@ class MainForm(Form):
         # 
         # label69
         # 
+        self._label69.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label69.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._label69.Location = System.Drawing.Point(308, 365)
+        self._label69.Location = System.Drawing.Point(309, 365)
         self._label69.Name = "label69"
         self._label69.Size = System.Drawing.Size(56, 23)
         self._label69.TabIndex = 60
@@ -758,8 +836,9 @@ class MainForm(Form):
         # 
         # label70
         # 
+        self._label70.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label70.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._label70.Location = System.Drawing.Point(308, 342)
+        self._label70.Location = System.Drawing.Point(309, 342)
         self._label70.Name = "label70"
         self._label70.Size = System.Drawing.Size(56, 23)
         self._label70.TabIndex = 59
@@ -767,8 +846,9 @@ class MainForm(Form):
         # 
         # label71
         # 
+        self._label71.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label71.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._label71.Location = System.Drawing.Point(308, 319)
+        self._label71.Location = System.Drawing.Point(309, 319)
         self._label71.Name = "label71"
         self._label71.Size = System.Drawing.Size(56, 23)
         self._label71.TabIndex = 58
@@ -776,6 +856,7 @@ class MainForm(Form):
         # 
         # label72
         # 
+        self._label72.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label72.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label72.Location = System.Drawing.Point(309, 296)
         self._label72.Name = "label72"
@@ -785,8 +866,9 @@ class MainForm(Form):
         # 
         # label73
         # 
+        self._label73.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label73.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._label73.Location = System.Drawing.Point(308, 273)
+        self._label73.Location = System.Drawing.Point(309, 273)
         self._label73.Name = "label73"
         self._label73.Size = System.Drawing.Size(56, 23)
         self._label73.TabIndex = 56
@@ -794,8 +876,9 @@ class MainForm(Form):
         # 
         # label74
         # 
+        self._label74.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label74.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._label74.Location = System.Drawing.Point(308, 250)
+        self._label74.Location = System.Drawing.Point(309, 250)
         self._label74.Name = "label74"
         self._label74.Size = System.Drawing.Size(56, 23)
         self._label74.TabIndex = 55
@@ -803,6 +886,7 @@ class MainForm(Form):
         # 
         # label75
         # 
+        self._label75.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label75.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label75.Location = System.Drawing.Point(309, 227)
         self._label75.Name = "label75"
@@ -812,6 +896,7 @@ class MainForm(Form):
         # 
         # label76
         # 
+        self._label76.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label76.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label76.Location = System.Drawing.Point(309, 204)
         self._label76.Name = "label76"
@@ -822,8 +907,9 @@ class MainForm(Form):
         # 
         # label77
         # 
+        self._label77.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label77.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._label77.Location = System.Drawing.Point(308, 181)
+        self._label77.Location = System.Drawing.Point(309, 181)
         self._label77.Name = "label77"
         self._label77.Size = System.Drawing.Size(56, 23)
         self._label77.TabIndex = 52
@@ -831,6 +917,7 @@ class MainForm(Form):
         # 
         # label78
         # 
+        self._label78.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label78.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label78.Location = System.Drawing.Point(309, 158)
         self._label78.Name = "label78"
@@ -840,8 +927,9 @@ class MainForm(Form):
         # 
         # label79
         # 
+        self._label79.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label79.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._label79.Location = System.Drawing.Point(308, 135)
+        self._label79.Location = System.Drawing.Point(309, 135)
         self._label79.Name = "label79"
         self._label79.Size = System.Drawing.Size(56, 23)
         self._label79.TabIndex = 50
@@ -849,8 +937,9 @@ class MainForm(Form):
         # 
         # label80
         # 
+        self._label80.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label80.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._label80.Location = System.Drawing.Point(308, 112)
+        self._label80.Location = System.Drawing.Point(309, 112)
         self._label80.Name = "label80"
         self._label80.Size = System.Drawing.Size(56, 23)
         self._label80.TabIndex = 49
@@ -858,6 +947,7 @@ class MainForm(Form):
         # 
         # label81
         # 
+        self._label81.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label81.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label81.Location = System.Drawing.Point(309, 89)
         self._label81.Name = "label81"
@@ -867,6 +957,7 @@ class MainForm(Form):
         # 
         # label82
         # 
+        self._label82.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label82.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label82.Location = System.Drawing.Point(309, 66)
         self._label82.Name = "label82"
@@ -876,6 +967,7 @@ class MainForm(Form):
         # 
         # label83
         # 
+        self._label83.BackColor = System.Drawing.Color.FromArgb(192, 255, 192)
         self._label83.Font = System.Drawing.Font("Microsoft Sans Serif", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label83.Location = System.Drawing.Point(309, 43)
         self._label83.Name = "label83"
@@ -885,7 +977,8 @@ class MainForm(Form):
         # 
         # MainForm
         # 
-        self.ClientSize = System.Drawing.Size(506, 459)
+        self.BackColor = System.Drawing.Color.Green
+        self.ClientSize = System.Drawing.Size(506, 482)
         self.Controls.Add(self._label34)
         self.Controls.Add(self._label35)
         self.Controls.Add(self._label36)
@@ -989,3 +1082,39 @@ class MainForm(Form):
 
     def MainFormLoad(self, sender, e):
         pass
+
+    def Button1Click(self, sender, e):
+        current_value = 1
+        while current_value <= 40:
+            print(current_value)
+            current_value +=1
+            
+
+    def Button2Click(self, sender, e): #Clear Button
+        self._label34.Text = ""
+        self._label35.Text = ""
+        self._label36.Text = ""
+        self._label37.Text = ""
+        self._label38.Text = ""
+        self._label49.Text = ""
+        self._label50.Text = ""
+        self._label51.Text = ""
+        self._label52.Text = ""
+        self._label53.Text = ""
+        self._label54.Text = ""
+        self._label55.Text = ""
+        self._label56.Text = ""
+        self._label57.Text = ""
+        self._label58.Text = ""
+        self._label59.Text = ""
+        self._label60.Text = ""
+        self._label61.Text = ""
+        self._label62.Text = ""
+        self._label63.Text = ""
+        self._label64.Text = ""
+        self._label65.Text = ""
+        self._label66.Text = ""
+        
+
+    def Button3Click(self, sender, e):
+        Application.Exit ()
