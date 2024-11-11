@@ -119,8 +119,6 @@ class MainForm(Form):
 
     def Button1Click(self, sender, e):
         #Calculate 3
-        current_value = 3 
-        while current_value = <3 
         
         
         
