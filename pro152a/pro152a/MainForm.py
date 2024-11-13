@@ -33,7 +33,7 @@ class MainForm(Form):
         # button2
         # 
         self._button2.Font = System.Drawing.Font("Microsoft Sans Serif", 15.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._button2.Location = System.Drawing.Point(195, 368)
+        self._button2.Location = System.Drawing.Point(189, 368)
         self._button2.Name = "button2"
         self._button2.Size = System.Drawing.Size(145, 55)
         self._button2.TabIndex = 1
@@ -50,6 +50,7 @@ class MainForm(Form):
         self._button3.TabIndex = 2
         self._button3.Text = "Exit"
         self._button3.UseVisualStyleBackColor = True
+        self._button3.Click += self.Button3Click
         # 
         # label1
         # 
@@ -68,6 +69,7 @@ class MainForm(Form):
         self._textBox1.Name = "textBox1"
         self._textBox1.Size = System.Drawing.Size(110, 31)
         self._textBox1.TabIndex = 4
+        self._textBox1.TextChanged += self.TextBox1TextChanged
         # 
         # label2
         # 
@@ -87,7 +89,7 @@ class MainForm(Form):
         self._label3.Name = "label3"
         self._label3.Size = System.Drawing.Size(211, 208)
         self._label3.TabIndex = 6
-        self._label3.Text = "E"
+        self._label3.Text = "Answer"
         # 
         # label4
         # 
@@ -117,13 +119,16 @@ class MainForm(Form):
         self.PerformLayout()
 
 
-    def Button1Click(self, sender, e):
-        #Calculate 3
+    def Button1Click(self, sender, e):  #Calculate 3
+        pass
         
-        
-        
-
     def Button2Click(self, sender, e):
         self._textBox1.Text = ""
         self._label3.Text = ""
         
+
+    def Button3Click(self, sender, e):
+        Application.Exit()
+
+    def TextBox1TextChanged(self, sender, e):
+        pass
