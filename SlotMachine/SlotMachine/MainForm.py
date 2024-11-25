@@ -33,6 +33,8 @@ class MainForm(Form):
         self._pictureBox10 = System.Windows.Forms.PictureBox()
         self._pictureBox11 = System.Windows.Forms.PictureBox()
         self._timer1 = System.Windows.Forms.Timer(self._components)
+        self._panel1 = System.Windows.Forms.Panel()
+        self._panel2 = System.Windows.Forms.Panel()
         self._pictureBox1.BeginInit()
         self._pictureBox2.BeginInit()
         self._pictureBox3.BeginInit()
@@ -44,6 +46,7 @@ class MainForm(Form):
         self._pictureBox9.BeginInit()
         self._pictureBox10.BeginInit()
         self._pictureBox11.BeginInit()
+        self._panel1.SuspendLayout()
         self.SuspendLayout()
         # 
         # pictureBox1
@@ -95,14 +98,14 @@ class MainForm(Form):
         self._button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         self._button1.Location = System.Drawing.Point(623, 12)
         self._button1.Name = "button1"
-        self._button1.Size = System.Drawing.Size(312, 342)
+        self._button1.Size = System.Drawing.Size(312, 330)
         self._button1.TabIndex = 4
         self._button1.UseVisualStyleBackColor = True
         self._button1.Click += self.Button1Click
         # 
         # button2
         # 
-        self._button2.BackColor = System.Drawing.Color.FromArgb(255, 192, 192)
+        self._button2.BackColor = System.Drawing.Color.FromArgb(255, 128, 128)
         self._button2.Font = System.Drawing.Font("Microsoft Sans Serif", 16, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._button2.Location = System.Drawing.Point(623, 370)
         self._button2.Name = "button2"
@@ -124,6 +127,7 @@ class MainForm(Form):
         # 
         # textBox1
         # 
+        self._textBox1.BackColor = System.Drawing.Color.FromArgb(255, 255, 192)
         self._textBox1.Font = System.Drawing.Font("Microsoft Sans Serif", 16, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._textBox1.Location = System.Drawing.Point(729, 445)
         self._textBox1.Name = "textBox1"
@@ -132,7 +136,7 @@ class MainForm(Form):
         # 
         # label2
         # 
-        self._label2.BackColor = System.Drawing.Color.FromArgb(224, 224, 224)
+        self._label2.BackColor = System.Drawing.Color.Green
         self._label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         self._label2.Font = System.Drawing.Font("Microsoft Sans Serif", 16, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label2.Location = System.Drawing.Point(729, 501)
@@ -247,9 +251,26 @@ class MainForm(Form):
         # 
         self._timer1.Tick += self.Timer1Tick
         # 
+        # panel1
+        # 
+        self._panel1.BackColor = System.Drawing.Color.Black
+        self._panel1.Controls.Add(self._panel2)
+        self._panel1.Location = System.Drawing.Point(3, 3)
+        self._panel1.Name = "panel1"
+        self._panel1.Size = System.Drawing.Size(965, 597)
+        self._panel1.TabIndex = 18
+        # 
+        # panel2
+        # 
+        self._panel2.BackColor = System.Drawing.Color.Lime
+        self._panel2.Location = System.Drawing.Point(614, 3)
+        self._panel2.Name = "panel2"
+        self._panel2.Size = System.Drawing.Size(326, 346)
+        self._panel2.TabIndex = 0
+        # 
         # MainForm
         # 
-        self.BackColor = System.Drawing.Color.Maroon
+        self.BackColor = System.Drawing.Color.FromArgb(0, 192, 192)
         self.ClientSize = System.Drawing.Size(971, 605)
         self.Controls.Add(self._pictureBox11)
         self.Controls.Add(self._pictureBox10)
@@ -269,6 +290,7 @@ class MainForm(Form):
         self.Controls.Add(self._pictureBox3)
         self.Controls.Add(self._pictureBox2)
         self.Controls.Add(self._pictureBox1)
+        self.Controls.Add(self._panel1)
         self.Name = "MainForm"
         self.Text = "SlotMachine"
         self._pictureBox1.EndInit()
@@ -282,6 +304,7 @@ class MainForm(Form):
         self._pictureBox9.EndInit()
         self._pictureBox10.EndInit()
         self._pictureBox11.EndInit()
+        self._panel1.ResumeLayout(False)
         self.ResumeLayout(False)
         self.PerformLayout()
 
@@ -358,6 +381,21 @@ class MainForm(Form):
             
             if num1 == 5 and num2 == 5 and num3 == 5:
                 newmoney += bet * 100
+                
+            if num1 == 4 and num2 == 5 and num3 == 5:
+                newmoney += bet * 14
+                
+            if num1 == 1 and num2 == 2 and num3 == 1:
+                newmoney += bet * 15
+                
+            if num1 == 1 and num2 == 2 and num3 == 4:
+                newmoney += bet * 1000
+                
+            if num1 == 1 and num2 == 2 and num3 == 2:
+                newmoney += bet * 120
+                
+            if num1 == 4 and num2 == 2 and num3 == 4:
+                newmoney += bet * 444
             
             # TODO: check if num1, num2, and num3 = 3, 4, and 5
             # and multiply bet by whatever you want ( DONE )
@@ -398,7 +436,7 @@ class MainForm(Form):
             # TODO: pb3/num3 (DONE)
            
             
-            self._progressBar1.Increment(10)#Original is 1
+            self._progressBar1.Increment(2)#Original is 1
             if self._progressBar1.Value == self._progressBar1.Maximum:
                 self._timer1.Enabled = False
                 self._pictureBox4.Visible = False
