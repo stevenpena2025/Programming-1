@@ -1,0 +1,10 @@
+C:\Users\penamartin.s\Desktop\Programming-1\prog140SimpleCalc\prog140SimpleCalc\bin\Debug\prog140SimpleCalc.exe.config
+C:\Users\penamartin.s\Desktop\Programming-1\prog140SimpleCalc\prog140SimpleCalc\bin\Debug\prog140SimpleCalc.exe
+C:\Users\penamartin.s\Desktop\Programming-1\prog140SimpleCalc\prog140SimpleCalc\bin\Debug\prog140SimpleCalc.dll
+C:\Users\penamartin.s\Desktop\Programming-1\prog140SimpleCalc\prog140SimpleCalc\bin\Debug\IronPython.dll
+C:\Users\penamartin.s\Desktop\Programming-1\prog140SimpleCalc\prog140SimpleCalc\bin\Debug\IronPython.Modules.dll
+C:\Users\penamartin.s\Desktop\Programming-1\prog140SimpleCalc\prog140SimpleCalc\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\penamartin.s\Desktop\Programming-1\prog140SimpleCalc\prog140SimpleCalc\bin\Debug\Microsoft.Scripting.dll
+C:\Users\penamartin.s\Desktop\Programming-1\prog140SimpleCalc\prog140SimpleCalc\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\penamartin.s\Desktop\Programming-1\prog140SimpleCalc\prog140SimpleCalc\obj\Debug\prog140SimpleCalc.pyprojResolveAssemblyReference.cache
+C:\Users\penamartin.s\Desktop\Programming-1\prog140SimpleCalc\prog140SimpleCalc\obj\Debug\prog140SimpleCalc.exe

@@ -112,7 +112,6 @@ class MainForm(Form):
        input = float(self._textBox1.Text)
        output = math.factorial (input)
        self._label3.Text = "Value is " + str (output)
-       
             
 
     def Button2Click(self, sender, e):
