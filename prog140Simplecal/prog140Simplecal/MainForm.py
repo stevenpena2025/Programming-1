@@ -233,6 +233,7 @@ class MainForm(Form):
 
     def Button3Click(self, sender, e): #=
         self._label5.Text = "="
+        
 
     def Button4Click(self, sender, e): #^
         self._label5.Text = "^"
