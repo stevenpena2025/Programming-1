@@ -7,11 +7,11 @@ from System.Windows.Forms import *
 class MainForm(Form):
     def __init__(self):
         self.InitializeComponent()
-        self.R = system.Random()
+        self.R = System.Random()
         self.ballup = 0
         self.balld = 0
-        self.flagleft = false
-        self.flagright = false
+        self.flagleft = False
+        self.flagright = False
     
     def InitializeComponent(self):
         self._components = System.ComponentModel.Container()
@@ -131,22 +131,83 @@ class MainForm(Form):
         pass
 
     def MainFormKeyDown(self, sender, e):
+        tball  = self._timerball
+        tdum   = self._timerdummy
+        tbool  = self._timerboolean
+        tmult  = self._timermulti
+        tleft  = self._timerleft
+        tright = self._timerright
+        bl     = self._lblball
+        lpdl   = self._lblleft
+        rpdl   = self._lblright
+        title  = self._lbltitle
+        
+        def reset():
+            title.Visible = True
+            title.Text = "Press Enter to Start or M to start Multiplayer"
+            self._leftscore.Text = "0"
+            self._rightscore.Text = "0"
+            tball.Enabled = False
+            tdum.Enabled = False
+            tbool.Enabled = False
+            tmult.Enabled = False
+            tleft.Enabled = False
+            tright.Enabled = False
+            bl.Left = self.Width // 2
+            bl.Top = self.Height // 2
+            lpdl.Top = (self.Height // 2) - 50 + lpdl.Height
+            rpdl.Top = (self.Height // 2) - 50 + rpdl.Height
+            """ TODO: RESET SECRETS """
+            bl.BackColor = Color.White
+            
+        if e.KeyCode == Keys.R:
+            reset()
+        
+        """ TODO: SECRET CONTROL """
+        
+        if e.KeyCode == Keys.Enter:
+            tball.Enabled = True
+            tdum.Enabled = True
+            tbool.Enabled = not tmult.Enabled
+            title.Visible = False
+        
+        if e.KeyCode == Keys.M:
+            reset()
+            title.Visible = True
+            title.Text = "Use W and S to move the left paddle; hit Enter to start"
+            tmult.Enabled = True
+            
+        if tdum.Enabled:
+            if e.KeyCode == Keys.Up:
+                self.flagright = False
+                tright.Enabled = True
+            elif e.KeyCode == Keys.Down:
+                self.flagright = True
+                tright.Enabled = True
+        
+        """ TODO: FINISH MULTIPLAYER CONTROLS """"""DONE"""
+        if tmult.Enabled and tball.Enabled:
+            if e.KeyCode == Keys.W:
+                self.flagleft = False
+                tleft.Enabled = True
+            elif e.KeyCode == Keys.S:
+                self.flagleft = True
+                tleft.Enabled = True
         pass
 
     def MainFormLoad(self, sender, e):
-        """TODO: ADD # UMIQUE SECRETS/CHEATS/EASTER EGGS
-        IN TOTAL & FINISH MULTIPLAYER & SCOREBOARD & DUMMY AI"""
-        self.balld = 1 
-        self.ballup = self.R.Next(-4,5)
+        """ TODO: ADD 3 UNIQUE SECRETS/CHEATS/EASTER EGGS
+        IN TOTAL & FINISH MULTIPLAYER & SCOREBOARD & DUMMY AI """
+        self.balld = 1
+        self.ballup = self.R.Next(-4, 5)
     
     def pdlTick(self, pdl, flagd, tmr):
         if flagd == True:
             pdl.Top += 5
         else:
             pdl.Top -= 5
-        if pld.Top <=10 or pdl.Bottom >= self.Height - 50:
-            tmr.Enable = False
-        
+        if pdl.Top <= 10 or pdl.Bottom >= self.Height - 50:
+            tmr.Enabled = False
 
     def TimerleftTick(self, sender, e):
         self.pdlTick(self._lblleft, self.flagleft, self._timerleft)
@@ -155,13 +216,13 @@ class MainForm(Form):
         self.pdlTick(self._lblright, self.flagright, self._timerright)
 
     def LblballClick(self, sender, e):
-        self._lblball.Backcolor = Color.Red
-        self.BackColor = Color.Green #From BG Color
-        """ TODO: PUT MORE EASTER EGGS LATER"""
+        self._lblball.BackColor = Color.Red
+        self.BackColor = Color.Green  # Form BG Color
+        """ TODO: PUT MORE EASTER EGGS LATER """
 
     def MainFormSizeChanged(self, sender, e):
         self._lblright.Left = self.Width - 25 - self._lblright.Width
         self._rightscore.Left = self.Width - 75 - self._rightscore.Width
-        self._lbltitle.Width = self.Width -25 
-        self._lblball.Left = self.Width // 2 
+        self._lbltitle.Width = self.Width - 25
+        self._lblball.Left = self.Width // 2
         self._lblball.Top = self.Height // 2
